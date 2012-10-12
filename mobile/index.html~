@@ -7,23 +7,30 @@
     <title>CrowdSnaps</title>
 
     <link rel="stylesheet" type="text/css" href="css/bbui-0.9.3.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css"/>
     <script type="text/javascript" src="js/bbui-0.9.3.js"></script>
     <script src="js/webworks-1.0.2.9.js"></script>
     <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/jquery.mobile-1.2.0.min.js"></script>
 
     <!--<script src="js/utils.js"></script>-->
     <script>
-        function ready() {
-            alert('1!');    
-        }
-
         window.addEventListener('load', function () {
                 document.addEventListener('webworksready', ready);
         }, false);
-
     </script>
 </head>
 <body>
-    <input type="button" value="login" onclick='location.href="home.html"'> 
+    <div data-role="page">
+
+        <div data-role="header">
+            <h1>CrowdSnaps</h1>
+        </div><!-- /header -->
+
+        <div data-role="content">   
+            <input type="button" value="login" onclick='location.href="home.html"'> 
+        </div><!-- /content -->
+
+    </div><!-- /page -->
 </body>
 </html>

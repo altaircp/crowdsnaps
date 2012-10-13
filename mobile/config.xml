@@ -1,12 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:rim="http://www.blackberry.com/ns/widgets"
         version="1.0.0.5" id="crowdsnaps" xml:lang="en">
   <author href="http://crowdsnaps.com"
           rim:copyright="Copyright 2012 Stratpoint Technologies">Stratpoint Technologies</author>
   <name>Crowdsnaps</name>
-  <content src="index.html"/>
-  <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
-  <feature id="blackberry.invoke.invoke" required="true" version="1.0.0.0"/>
-  <feature id="blackberry.invoke.BrowserArguments" required="true" version="1.0.0.0"/>
+  <description>
+    Crowdsnaps Whats happening near you!
+  </description>
+ 
+  <!--
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>read_geolocation</rim:permit>
+    <rim:permit>use_camera</rim:permit>  
+  </rim:permissions>
+  -->
+  <icon src="images/icon-150.png"/>
+
+  <rim:splash src="splash-1280x768.png"/>
+  <rim:splash src="splash-768x1280.png"/>
+
+  <content src="index.html" rim:allowInvokeParams="true"/>
+
+  <feature id="blackberry.app.orientation">
+    <param name="mode" value="portrait" />
+  </feature>
+ 
+  <feature id="blackberry.app">
+    <param name="backgroundColor" value="0xFFFF0000" />
+  </feature>
+
+<!--
+  <feature id="blackberry.invoke" version="1.0.0"/> 
+  <feature id="blackberry.invoke.BrowserArguments" version="1.0.0"/> 
+  <feature id="blackberry.identity" version="1.0.0"/>
+  <feature id="blackberry.invoke.CameraArguments" required="true"/>
+  <access uri="http://api.crowdsnaps.com" subdomains="true" />
+
+  <feature id="blackberry.identity" required="true"/>
+  <feature id="blackberry.invoke" required="true"/>
+  <feature id="blackberry.invoke.invoke" required="true"/>
+  <feature id="blackberry.invoke.BrowserArguments" required="true"/>
+  <feature id="blackberry.app" required="true" version="1.0.0.0"/>
+-->
 </widget>

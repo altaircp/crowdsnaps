@@ -1,13 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <div style="background-color:black;background-image: url('images/grid/pattern.png');" data-bb-type="screen" data-bb-effect="fade">
 	<div data-bb-type="round-panel" style="margin-top:10px;"> 
-		<div data-bb-type="panel-header">Crowdsnaps</div>
-		<p style="text-align:center;">Join Crowdsnaps and see whats happening around you!</p>
+		<div data-bb-type="panel-header">CrowdSnaps</div>
+		<p style="text-align:center;">Join CrowdSnaps and See What's Happening Around You!</p>
 	</div>
     <div data-bb-type="label-control-container">
        <div data-bb-type="row">
            <div data-bb-style="stretch" data-bb-type="button" data-bb-img="images/facebook.png"  onclick="login()">Login!</div>
            <div data-bb-type="label"></div>
        </div>
+       <!--
+       <div data-bb-type="row">
+            <input id="photo-file" type="file"/>
+            <div data-bb-type="label">Choose photo to updload</div>
+       </div>
+       <div data-bb-type="row">
+           <div data-bb-style="stretch" data-bb-type="button"  onclick="upload()">Upload!</div>
+           <div data-bb-type="label"></div>
+       </div>
+       <div data-bb-type="row">
+           <div data-bb-style="stretch" data-bb-type="button"  onclick="capture()">Capture!</div>
+           <div data-bb-type="label"></div>
+       </div>
+       -->
     </div>
 </div>

@@ -50,6 +50,11 @@ function openURL(url)
 
 function login(){
     bb.pushScreen('grid.htm','home');
-    openURL('http://api.crowdsnaps.com');
+    openURL('http://api.crowdsnaps.com/login');
     //location.href="home.html"
+}
+function capture(){
+    var args = new blackberry.invoke.CameraArguments();
+    args.view = 1; // Video Recorder
+    blackberry.invoke.invoke(blackberry.invoke.APP_CAMERA, args);  // Video Recorder Application
 }

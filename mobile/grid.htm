@@ -14,13 +14,30 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 -->
+
+<script>
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+    function onError(error) {
+        alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+    }
+
+    function onSuccess(position){
+        window.localStorage.setItem("latitude", position.coords.latitude);
+        window.localStorage.setItem("longitude", position.coords.longitude);
+    }
+
+</script>
 <div style="background-color:black;background-image: url('images/grid/pattern.png');" data-bb-type="screen" data-bb-effect="fade">
 	<div data-bb-type="grid-layout" data-bb-style="square" data-bb-header-style="solid" data-bb-header-justify="left">
         <div data-bb-type="group" data-bb-title="What's Happening Around You">
-            <div id="map-icon" style="position:absolute;right:0;top:-10px" onclick="$('#map').toggle();"><img src="images/map-pin.png"></div>
+            <div id="map-icon" style="position:absolute;right:0;top:2px" onClick="getMap()"><img style="margin-right:10px" src="images/map-pin.png"></div>
+                <div id="map-canvas" style="display:none;width:100%;height:500px"><img width="100%" src="images/map.png"></div>		
+<!--
 			<div data-bb-type="row">
-                <div id="map" style="width:100%;height:auto !important;overflow-hidden"><img width="100%" src="images/map.png"></div>		
+                <div id="map-canvas" style="width:100%;"><img width="100%" src="images/map.png"></div>		
             </div>
+-->
 			<div data-bb-type="row">
 				<div data-bb-type="item" onclick="bb.pushScreen('events.htm', 'events')" data-bb-img="images/1/1.jpg" data-bb-title="Blackberry Hackathon"></div>		
 				<div data-bb-type="item" onclick="bb.pushScreen('alpha.htm', 'alpha')" data-bb-img="images/2/1.jpg" data-bb-title="Alphaland SG Sale"></div> 
@@ -42,13 +59,16 @@
 				<div data-bb-type="item" onclick="bb.pushScreen('events.htm', 'events')" data-bb-img="images/1/6.jpg" data-bb-title="Blackberry Hackathon"></div>
 			</div>
 		</div>
-	</div>
+    </div>
+
+    <!--
     <div data-bb-type="label-control-container">
        <div data-bb-type="row">
            <div data-bb-style="stretch" data-bb-type="button" onclick="login()">More!</div>
            <div data-bb-type="label"></div>
        </div>
     </div>
+    -->
 
 	<div data-bb-type="action-bar" data-bb-back-caption="Logout">
         <div data-bb-type="action" data-bb-style="button" data-bb-img="images/snap.png" onclick="bb.pushScreen('snap.htm', 'snap');">Snap</div>

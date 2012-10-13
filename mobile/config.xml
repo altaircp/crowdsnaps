@@ -18,8 +18,10 @@
   -->
   <icon src="images/icon-150.png"/>
 
+  <!--
   <rim:splash src="splash-1280x768.png"/>
   <rim:splash src="splash-768x1280.png"/>
+  -->
 
   <content src="index.html" rim:allowInvokeParams="true"/>
 
@@ -44,4 +46,8 @@
   <feature id="blackberry.invoke.BrowserArguments" required="true"/>
   <feature id="blackberry.app" required="true" version="1.0.0.0"/>
 -->
+<access subdomains="true" uri="http://gstatic.com"/>
+<access subdomains="true" uri="http://google.com"/>
+<access subdomains="true" uri="http://googleapis.com"/>
+
 </widget>

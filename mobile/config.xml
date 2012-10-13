@@ -3,10 +3,10 @@
         xmlns:rim="http://www.blackberry.com/ns/widgets"
         version="1.0.0.5" id="crowdsnaps" xml:lang="en">
   <author href="http://crowdsnaps.com"
-          rim:copyright="Copyright 2012 Stratpoint Technologies">Stratpoint Technologies</author>
+          rim:copyright="Copyright 2012 CrowdSnaps">Stratpoint Technologies</author>
   <name>Crowdsnaps</name>
   <description>
-    Crowdsnaps Whats happening near you!
+    Crowdsnaps - What's Happening Around You!
   </description>
  
   <!--
@@ -16,7 +16,7 @@
     <rim:permit>use_camera</rim:permit>  
   </rim:permissions>
   -->
-  <icon src="images/icon-150.png"/>
+  <icon src="images/snaplogo.png"/>
 
   <!--
   <rim:splash src="splash-1280x768.png"/>
@@ -28,10 +28,12 @@
   <feature id="blackberry.app.orientation">
     <param name="mode" value="portrait" />
   </feature>
- 
+
+  <!-- 
   <feature id="blackberry.app">
     <param name="backgroundColor" value="0xFFFF0000" />
   </feature>
+  -->
 
 <!--
   <feature id="blackberry.invoke" version="1.0.0"/> 
@@ -46,8 +48,18 @@
   <feature id="blackberry.invoke.BrowserArguments" required="true"/>
   <feature id="blackberry.app" required="true" version="1.0.0.0"/>
 -->
-<access subdomains="true" uri="http://gstatic.com"/>
-<access subdomains="true" uri="http://google.com"/>
-<access subdomains="true" uri="http://googleapis.com"/>
-
+<!--
+<access subdomains="true" uri="http://google.com">
+    <feature id="blackberry.app.event" />
+    <feature id="blackberry.app.invoke" />
+</access>
+<access subdomains="true" uri="http://googleapis.com">
+    <feature id="blackberry.app.event" />
+    <feature id="blackberry.app.invoke" />
+</access>
+<access subdomains="true" uri="http://gstatic.com">
+    <feature id="blackberry.app.event" />
+    <feature id="blackberry.app.invoke" />
+</access>
+-->
 </widget>

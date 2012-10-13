@@ -4,6 +4,7 @@ function getMap() {
     //alert(window.localStorage.getItem("longitude"));
    
     $('#map-canvas').toggle(); 
+    /*
     var myLatlng = new google.maps.LatLng(14.554729,121.0244452);
 
     var myOptions = {
@@ -13,4 +14,5 @@ function getMap() {
     };
 
     var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+    */
 }

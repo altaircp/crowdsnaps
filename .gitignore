@@ -7,3 +7,6 @@
 .metadata
 .svn
 .svn/*
+out
+lib
+mobile/s

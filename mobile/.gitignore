@@ -1,0 +1,9 @@
+*.swp
+*.tmp
+*~
+*~.nib
+.DS_Store
+.Spotlight-V100
+.metadata
+.svn
+.svn/*

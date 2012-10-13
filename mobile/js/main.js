@@ -50,7 +50,7 @@ function openURL(url)
 
 function login(){
     bb.pushScreen('grid.htm','home');
-    openURL('http://api.crowdsnaps.com/login');
+    //openURL('http://api.crowdsnaps.com/login');
     //location.href="home.html"
 }
 function capture(){

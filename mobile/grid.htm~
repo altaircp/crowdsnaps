@@ -46,9 +46,9 @@
        </div>
     </div>
 
-	<div data-bb-type="action-bar" data-bb-back-caption="Logout">
-        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('action1.htm', 'action1');">Snap</div>
-        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Action 2. This could trigger an alert or load a page, or any other action you wish');">Settings</div>
+	<div data-bb-type="action-bar" data-bb-back-caption="Logout" style="font-size:10pt">
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('action1.htm', 'action1');" style="font-size:10pt">Snap</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Action 2. This could trigger an alert or load a page, or any other action you wish');" style="font-size:10pt" >Settings</div>
     </div>
 
 </div>

@@ -6,7 +6,7 @@
 	</div>
     <div data-bb-type="label-control-container">
        <div data-bb-type="row">
-           <div data-bb-style="stretch" data-bb-type="button" data-bb-img="images/facebook.png"  onclick="login()">Login!</div>
+           <div data-bb-style="stretch" style="font-size:20px" data-bb-type="button" data-bb-img="images/facebook.png"  onclick="login()">Login!</div>
            <div data-bb-type="label"></div>
        </div>
     </div>
